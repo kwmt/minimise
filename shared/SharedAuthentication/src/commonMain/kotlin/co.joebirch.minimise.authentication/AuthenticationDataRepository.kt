@@ -1,6 +1,7 @@
 package co.joebirch.minimise.authentication
 
 import co.joebirch.minimise.authentication.mapper.ResetPasswordResponseMapper
+import co.joebirch.minimise.authentication.model.AuthenticationModel
 import co.joebirch.minimise.authentication.model.ResetPasswordResponse
 import co.joebirch.minimise.authentication.remote.AuthenticationRemote
 
@@ -13,7 +14,7 @@ class AuthenticationDataRepository constructor(
         apiKey: String,
         emailAddress: String,
         password: String
-    ) = authenticationStore.signUp(apiKey, emailAddress, password)
+    ) = AuthenticationModel("token", "message")//authenticationStore.signUp(apiKey, emailAddress, password)
 
     override suspend fun signIn(
         apiKey: String,

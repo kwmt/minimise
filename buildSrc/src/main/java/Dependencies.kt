@@ -9,7 +9,7 @@ object Versions {
 
 object Deps {
 
-    const val androidGradlePlugin = "com.android.tools.build:gradle:7.0.0-alpha14"
+    const val androidGradlePlugin = "com.android.tools.build:gradle:7.0.2"
     const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.32"
 
     const val junit = "junit:junit:4.12"
@@ -147,7 +147,7 @@ object Deps {
         val material = "com.google.android.material:material:1.2.0-alpha03"
 
         object Hilt {
-            private const val hiltVersion = "2.31.2-alpha"
+            private const val hiltVersion = "2.39.1"
             val gradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:$hiltVersion"
             val hilt = "com.google.dagger:hilt-android:$hiltVersion"
             val viewmodel = "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"

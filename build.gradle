@@ -37,6 +37,8 @@ buildscript {
     }
 }
 
+apply from: rootProject.file('gradle/projectDependencyGraph.gradle')
+
 allprojects {
 
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
